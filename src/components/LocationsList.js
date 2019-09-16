@@ -1,7 +1,5 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
-import { BrowserRouter as Router, Route, Link  } from 'react-router-dom';
-import CharacterCard from "./CharacterCard";
 import LocationCard from "./LocationCard";
 
 export default function LocationList() {
@@ -10,16 +8,20 @@ export default function LocationList() {
   useEffect(() => {
   }, [])
   axios
-  .get("https://rickandmortyapi.com/api/character/")
+  .get("https://rickandmortyapi.com/api/location/")
   .then(res => {console.log(res.data);
   setData(res.data);
 }, []);
 
   return (
-    <section className="character-list grid-view">
-      <h2>TODO: `array.map()` over your state here!</h2>
-    <LocationCard  name={data.name} 
-      />
+    <section className="location-list">
+      <h2>List of locations(map over)</h2>
+    <LocationCard  
+      name={data.name}
+      type={data.type} 
+      dimension={data.dimension} 
+      residents={data.residents}  
+    />
     </section>
   );
 }

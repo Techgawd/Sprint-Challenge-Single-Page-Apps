@@ -1,6 +1,4 @@
 import React, {useState, useEffect} from "react";
-import axios from "axios";
-import CharacterCard from "./components/CharacterCard";
 import { BrowserRouter as Router, Route, Link  } from 'react-router-dom';
 import CharacterList from "./components/CharacterList";
 import EpisodeList from "./components/EpisodeList";
@@ -8,29 +6,26 @@ import LocationList from "./components/LocationsList";
 
 const Home = (props) => {
   return <h1>Home Component</h1>
-}
-
+};
 const Characters = (props)  => {
   return (
     <CharacterList />
     )
-}
-
+};
 const Locations = (props)  => {
   return (
     <LocationList />
   )
-}
-
+};
 const Episodes = (props)  => {
   return (
     <EpisodeList />
   )
-}
+};
 
 function App () {
   return (
-    <div>
+    <div className="saved-list">
       <h1>Rick and Morty Homepage!</h1>
         <Router>
       <Link to = '/'>Home</Link>
@@ -42,7 +37,7 @@ function App () {
       <Route path= '/Episodes' component = {Episodes} />
       </Router>
     </div>
-  );
-  }
+  )
+  };
 
 export default App;

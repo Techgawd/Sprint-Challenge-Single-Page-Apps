@@ -15,11 +15,16 @@ export default function CharacterList() {
 }, []);
 
   return (
-    <section className="character-list grid-view">
-      <h2>TODO: `array.map()` over your state here!</h2>
-    <CharacterCard  name={data.name} 
-      />
-    </section>
+    <div className="character-list">
+      <h2>List of characters (map over)</h2>
+    <CharacterCard  
+      url={data.url} 
+      name={data.name} 
+      species={data.species} 
+      gender={data.gender} 
+      origin={data.origin} 
+    />
+    </div>
   );
 }
 

@@ -1,18 +1,3 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-}
-
-main {
-  width: 85vw;
-  min-height: 80vh;
-  max-width: 1024px;
-  margin: 35px auto;
-  background: #fff;
-  padding: 15px;
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
-}
 
 .grid-view {
   display: flex;
@@ -20,20 +5,30 @@ main {
   justify-content: space-evenly;
 }
 
-.page-view {
-  min-height: 40vh;
+.saved-list {
+  background-color: #fff;
+  border: 0;
+  box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
+    0 2px 4px rgba(0, 0, 0, 0.24);
+  padding: 1rem;
+  cursor: pointer;
+  position: relative;
+  margin: 1rem auto;
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.grid-view div.card.ui {
-  margin: 1.25rem;
+.character-list {
+  background-color: blue;
 }
-/*
-.main-img {
-  display: block;
-  border-radius: 100%;
-  margin: 0 auto;
-} */
 
-header h1 {
-  text-align: center;
+.location-list {
+  background-color: blue;
 }
+
+.episode-list {
+  background-color: blue;
+}
+

@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
-import { BrowserRouter as Router, Route, Link  } from 'react-router-dom';
 import EpisodeCard from "./EpisodeCard";
 
 export default function EpisodeList() {
@@ -16,9 +15,14 @@ export default function EpisodeList() {
 
   return (
     <section className="character-list grid-view">
-      <h2>TODO: `array.map()` over your state here!</h2>
-    <EpisodeCard  />
+      <h2>List of episodes (map over)</h2>
+    <EpisodeCard
+        name={data.name}
+        air_date={data.air_date} 
+        episode={data.episode} 
+        characters={data.characters} 
+    />
     </section>
-  );
-}
-
+  )
+};
+ 
