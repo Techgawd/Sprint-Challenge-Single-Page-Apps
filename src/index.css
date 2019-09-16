@@ -21,14 +21,22 @@
 }
 
 .character-list {
-  background-color: blue;
+  background-color: #B55B7D;
+  color: azure;
 }
 
 .location-list {
-  background-color: blue;
+  background-color: #B55B7D;
+  color: azure;
 }
 
 .episode-list {
-  background-color: blue;
+  background-color: #B55B7D;
+  color: azure;
 }
 
+.nav-bar {
+  width: 100%;
+  font-size: 22px;
+
+}
