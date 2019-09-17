@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import TabNav from "./components/TabNav";
 import WelcomePage from "./components/WelcomePage";
 

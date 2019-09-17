@@ -16,11 +16,7 @@ export default function LocationList() {
   return (
     <section className="location-list">
       <h2>List of locations(map over)</h2>
-    <LocationCard  
-      name={data.name}
-      type={data.type} 
-      dimension={data.dimension} 
-      residents={data.residents}  
+      {data.map(location => <LocationCard locat={location}/>)}
     />
     </section>
   );

@@ -16,12 +16,7 @@ export default function EpisodeList() {
   return (
     <section className="character-list grid-view">
       <h2>List of episodes (map over)</h2>
-    <EpisodeCard
-        name={data.name}
-        air_date={data.air_date} 
-        episode={data.episode} 
-        characters={data.characters} 
-    />
+      {data.map(episode => <EpisodeCard epi={episode}/>)}
     </section>
   )
 };
